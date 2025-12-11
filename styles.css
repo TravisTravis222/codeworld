@@ -1,0 +1,902 @@
+/*Test button (is also used as a template for all other buttons)*/
+.test-button {
+  /* Basic Button Styling */
+  display: inline-flex;
+  width: 400px;
+  height: 400px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #101010; /* Initial solid color */
+  cursor: pointer;
+  overflow: hidden; /* Hides the initial width: 0 element */
+  position: relative;
+  z-index: 1;
+  border: none;
+  border-bottom: 50px solid #101010;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-radius: 10%;
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Pseudo-element that starts at width 0 and expands */
+.test-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; /* Starts with 0 width */
+  height: 100%;
+  background-image: url("images/test.jpg"); /* The color that slides in */
+  transition: width 0.4s ease-out; /* Smoothly transitions the width property */
+  z-index: -1;
+}
+
+/* On hover, increase the width to 100% */
+.test-button:hover::before {
+  width: 100%; /* Slides into full view by expanding width */
+}
+
+.test-button:hover {
+  color: #000000 !important;
+  transform: rotate(-10deg);
+}
+
+/*Background*/
+html {
+  background-color: black;
+}
+
+/*Games*/
+.games-button {
+  /* Basic Button Styling */
+  display: inline-flex;
+  width: 400px;
+  height: 400px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #101010; /* Initial solid color */
+  cursor: pointer;
+  overflow: hidden; /* Hides the initial width: 0 element */
+  position: relative;
+  z-index: 1;
+  border: none;
+  border-bottom: 50px solid #101010;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-radius: 10%;
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Pseudo-element that starts at width 0 and expands */
+.games-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; /* Starts with 0 width */
+  height: 100%;
+  background-image: url("images/games.png"); /* The color that slides in */
+  transition: width 0.4s ease-out; /* Smoothly transitions the width property */
+  z-index: -1;
+}
+
+/* On hover, increase the width to 100% */
+.games-button:hover::before {
+  width: 100%; /* Slides into full view by expanding width */
+}
+
+.games-button:hover {
+  color: #000000 !important; 
+  transform: rotate(-10deg);
+}
+
+/*Make Your Own*/
+.diy-button {
+  /* Basic Button Styling */
+  display: inline-flex;
+  width: 400px;
+  height: 400px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #101010; /* Initial solid color */
+  cursor: pointer;
+  overflow: hidden; /* Hides the initial width: 0 element */
+  position: relative;
+  z-index: 1;
+  border: none;
+  border-bottom: 50px solid #101010;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-radius: 10%;
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Pseudo-element that starts at width 0 and expands */
+.diy-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; /* Starts with 0 width */
+  height: 100%;
+  background-image: url("images/diy.png"); /* The color that slides in */
+  transition: width 0.4s ease-out; /* Smoothly transitions the width property */
+  z-index: -1;
+}
+
+/* On hover, increase the width to 100% */
+.diy-button:hover::before {
+  width: 100%; /* Slides into full view by expanding width */
+}
+
+.diy-button:hover {
+  color: #000000 !important; 
+  transform: rotate(-10deg);
+}
+
+/*Tutorials*/
+.tutorials-button {
+  /* Basic Button Styling */
+  display: inline-flex;
+  width: 400px;
+  height: 400px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #101010; /* Initial solid color */
+  cursor: pointer;
+  overflow: hidden; /* Hides the initial width: 0 element */
+  position: relative;
+  z-index: 1;
+  border: none;
+  border-bottom: 50px solid #101010;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-radius: 10%;
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Pseudo-element that starts at width 0 and expands */
+.tutorials-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; /* Starts with 0 width */
+  height: 100%;
+  background-image: url("images/tutorials.png"); /* The color that slides in */
+  transition: width 0.4s ease-out; /* Smoothly transitions the width property */
+  z-index: -1;
+}
+
+/* On hover, increase the width to 100% */
+.tutorials-button:hover::before {
+  width: 100%; /* Slides into full view by expanding width */
+}
+
+.tutorials-button:hover {
+  color: #000000 !important; 
+  transform: rotate(-10deg);
+}
+
+/*Buy Stuff*/
+.money-button {
+  /* Basic Button Styling */
+  display: inline-flex;
+  width: 400px;
+  height: 400px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #101010; /* Initial solid color */
+  cursor: pointer;
+  overflow: hidden; /* Hides the initial width: 0 element */
+  position: relative;
+  z-index: 1;
+  border: none;
+  border-bottom: 50px solid #101010;
+  text-align: left;
+  padding-top: 24px;
+  padding-left: 30px;
+  border-radius: 10%;
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Pseudo-element that starts at width 0 and expands */
+.money-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; /* Starts with 0 width */
+  height: 100%;
+  background-image: url("images/money.png"); /* The color that slides in */
+  transition: width 0.4s ease-out; /* Smoothly transitions the width property */
+  z-index: -1;
+}
+
+/* On hover, increase the width to 100% */
+.money-button:hover::before {
+  width: 100%; /* Slides into full view by expanding width */
+}
+
+.money-button:hover {
+  color: #000000 !important; 
+  transform: rotate(-10deg);
+}
+
+/*Text at the bottom of the page*/
+.shitty-bottom-text {
+  color: #FFFFFF;
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "ROND" 0;
+}
+
+/* Removes the colour and underline from hyperlinks*/
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/*Code.org*/
+.code-org-button {
+  /* Basic Button Styling */
+  display: inline-flex;
+  width: 400px;
+  height: 400px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #101010; /* Initial solid color */
+  cursor: pointer;
+  overflow: hidden; /* Hides the initial width: 0 element */
+  position: relative;
+  z-index: 1;
+  border: none;
+  border-bottom: 50px solid #101010;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-radius: 10%;
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Pseudo-element that starts at width 0 and expands */
+.code-org-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; /* Starts with 0 width */
+  height: 100%;
+  background-image: url("images/code-org.png"); /* The color that slides in */
+  transition: width 0.4s ease-out; /* Smoothly transitions the width property */
+  z-index: -1;
+}
+
+/* On hover, increase the width to 100% */
+.code-org-button:hover::before {
+  width: 100%; /* Slides into full view by expanding width */
+}
+
+.code-org-button:hover {
+  color: #000000 !important; 
+  transform: rotate(-10deg);
+}
+
+/*CodinGame*/
+.codingame-button {
+  /* Basic Button Styling */
+  display: inline-flex;
+  width: 400px;
+  height: 400px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #101010; /* Initial solid color */
+  cursor: pointer;
+  overflow: hidden; /* Hides the initial width: 0 element */
+  position: relative;
+  z-index: 1;
+  border: none;
+  border-bottom: 50px solid #101010;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-radius: 10%;
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Pseudo-element that starts at width 0 and expands */
+.codingame-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; /* Starts with 0 width */
+  height: 100%;
+  background-image: url("images/codingame.png"); /* The color that slides in */
+  transition: width 0.4s ease-out; /* Smoothly transitions the width property */
+  z-index: -1;
+}
+
+/* On hover, increase the width to 100% */
+.codingame-button:hover::before {
+  width: 100%; /* Slides into full view by expanding width */
+}
+
+.codingame-button:hover {
+  color: #000000 !important; 
+  transform: rotate(-10deg);
+}
+
+/*Scratch*/
+.scratch-button {
+  /* Basic Button Styling */
+  display: inline-flex;
+  width: 400px;
+  height: 400px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #101010; /* Initial solid color */
+  cursor: pointer;
+  overflow: hidden; /* Hides the initial width: 0 element */
+  position: relative;
+  z-index: 1;
+  border: none;
+  border-bottom: 50px solid #101010;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-radius: 10%;
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Pseudo-element that starts at width 0 and expands */
+.scratch-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; /* Starts with 0 width */
+  height: 100%;
+  background-image: url("images/scratch.png"); /* The color that slides in */
+  transition: width 0.4s ease-out; /* Smoothly transitions the width property */
+  z-index: -1;
+}
+
+/* On hover, increase the width to 100% */
+.scratch-button:hover::before {
+  width: 100%; /* Slides into full view by expanding width */
+}
+
+.scratch-button:hover {
+  color: #000000 !important; 
+  transform: rotate(-10deg);
+}
+
+/*Phoenix Code*/
+.phcode-button {
+  /* Basic Button Styling */
+  display: inline-flex;
+  width: 400px;
+  height: 400px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #101010; /* Initial solid color */
+  cursor: pointer;
+  overflow: hidden; /* Hides the initial width: 0 element */
+  position: relative;
+  z-index: 1;
+  border: none;
+  border-bottom: 50px solid #101010;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-radius: 10%;
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Pseudo-element that starts at width 0 and expands */
+.phcode-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; /* Starts with 0 width */
+  height: 100%;
+  background-image: url("images/phcode.png"); /* The color that slides in */
+  transition: width 0.4s ease-out; /* Smoothly transitions the width property */
+  z-index: -1;
+}
+
+/* On hover, increase the width to 100% */
+.phcode-button:hover::before {
+  width: 100%; /* Slides into full view by expanding width */
+}
+
+.phcode-button:hover {
+  color: #000000 !important; 
+  transform: rotate(-10deg);
+}
+
+/*Minecraft Education*/
+.mcedu-button {
+  /* Basic Button Styling */
+  display: inline-flex;
+  width: 400px;
+  height: 400px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #101010; /* Initial solid color */
+  cursor: pointer;
+  overflow: hidden; /* Hides the initial width: 0 element */
+  position: relative;
+  z-index: 1;
+  border: none;
+  border-bottom: 50px solid #101010;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-radius: 10%;
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Pseudo-element that starts at width 0 and expands */
+.mcedu-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; /* Starts with 0 width */
+  height: 100%;
+  background-image: url("images/mcedu.png"); /* The color that slides in */
+  transition: width 0.4s ease-out; /* Smoothly transitions the width property */
+  z-index: -1;
+}
+
+/* On hover, increase the width to 100% */
+.mcedu-button:hover::before {
+  width: 100%; /* Slides into full view by expanding width */
+}
+
+.mcedu-button:hover {
+  color: #000000 !important; 
+  transform: rotate(-10deg);
+}
+/*micro:bit MakeCode*/
+.mcbtmkcd-button {
+  /* Basic Button Styling */
+  display: inline-flex;
+  width: 400px;
+  height: 400px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #101010; /* Initial solid color */
+  cursor: pointer;
+  overflow: hidden; /* Hides the initial width: 0 element */
+  position: relative;
+  z-index: 1;
+  border: none;
+  border-bottom: 50px solid #101010;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-radius: 10%;
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Pseudo-element that starts at width 0 and expands */
+.mcbtmkcd-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; /* Starts with 0 width */
+  height: 100%;
+  background-image: url("images/mcbtmkcd.png"); /* The color that slides in */
+  transition: width 0.4s ease-out; /* Smoothly transitions the width property */
+  z-index: -1;
+}
+
+/* On hover, increase the width to 100% */
+.mcbtmkcd-button:hover::before {
+  width: 100%; /* Slides into full view by expanding width */
+}
+
+.mcbtmkcd-button:hover {
+  color: #000000 !important; 
+  transform: rotate(-10deg);
+}
+
+/*Codecademy*/
+.ccad-button {
+  /* Basic Button Styling */
+  display: inline-flex;
+  width: 400px;
+  height: 400px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #101010; /* Initial solid color */
+  cursor: pointer;
+  overflow: hidden; /* Hides the initial width: 0 element */
+  position: relative;
+  z-index: 1;
+  border: none;
+  border-bottom: 50px solid #101010;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-radius: 10%;
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Pseudo-element that starts at width 0 and expands */
+.ccad-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; /* Starts with 0 width */
+  height: 100%;
+  background-image: url("images/ccad.png"); /* The color that slides in */
+  transition: width 0.4s ease-out; /* Smoothly transitions the width property */
+  z-index: -1;
+}
+
+/* On hover, increase the width to 100% */
+.ccad-button:hover::before {
+  width: 100%; /* Slides into full view by expanding width */
+}
+
+.ccad-button:hover {
+  color: #000000 !important;
+  transform: rotate(-10deg);
+}
+
+/*Moz://a Docs (aka MDN Web Docs)*/
+.mozdocs-button {
+  /* Basic Button Styling */
+  display: inline-flex;
+  width: 400px;
+  height: 400px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #101010; /* Initial solid color */
+  cursor: pointer;
+  overflow: hidden; /* Hides the initial width: 0 element */
+  position: relative;
+  z-index: 1;
+  border: none;
+  border-bottom: 50px solid #101010;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-radius: 10%;
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Pseudo-element that starts at width 0 and expands */
+.mozdocs-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; /* Starts with 0 width */
+  height: 100%;
+  background-image: url("images/mozdocs.png"); /* The color that slides in */
+  transition: width 0.4s ease-out; /* Smoothly transitions the width property */
+  z-index: -1;
+}
+
+/* On hover, increase the width to 100% */
+.mozdocs-button:hover::before {
+  width: 100%; /* Slides into full view by expanding width */
+}
+
+.mozdocs-button:hover {
+  color: #000000 !important;
+  transform: rotate(-10deg);
+}
+
+/*W3Schools*/
+.w3schools-button {
+  /* Basic Button Styling */
+  display: inline-flex;
+  width: 400px;
+  height: 400px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #101010; /* Initial solid color */
+  cursor: pointer;
+  overflow: hidden; /* Hides the initial width: 0 element */
+  position: relative;
+  z-index: 1;
+  border: none;
+  border-bottom: 50px solid #101010;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-radius: 10%;
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Pseudo-element that starts at width 0 and expands */
+.w3schools-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; /* Starts with 0 width */
+  height: 100%;
+  background-image: url("images/w3schools.png"); /* The color that slides in */
+  transition: width 0.4s ease-out; /* Smoothly transitions the width property */
+  z-index: -1;
+}
+
+/* On hover, increase the width to 100% */
+.w3schools-button:hover::before {
+  width: 100%; /* Slides into full view by expanding width */
+}
+
+.w3schools-button:hover {
+  color: #000000 !important;
+  transform: rotate(-10deg);
+}
+
+/*Tynker*/
+.tynker-button {
+  /* Basic Button Styling */
+  display: inline-flex;
+  width: 400px;
+  height: 400px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #101010; /* Initial solid color */
+  cursor: pointer;
+  overflow: hidden; /* Hides the initial width: 0 element */
+  position: relative;
+  z-index: 1;
+  border: none;
+  border-bottom: 50px solid #101010;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-radius: 10%;
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Pseudo-element that starts at width 0 and expands */
+.tynker-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; /* Starts with 0 width */
+  height: 100%;
+  background-image: url("images/tynker.png"); /* The color that slides in */
+  transition: width 0.4s ease-out; /* Smoothly transitions the width property */
+  z-index: -1;
+}
+
+/* On hover, increase the width to 100% */
+.tynker-button:hover::before {
+  width: 100%; /* Slides into full view by expanding width */
+}
+
+.tynker-button:hover {
+  color: #000000 !important;
+  transform: rotate(-10deg);
+}
+
+/*Coddy.Tech*/
+.coddy-button {
+  /* Basic Button Styling */
+  display: inline-flex;
+  width: 400px;
+  height: 400px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #101010; /* Initial solid color */
+  cursor: pointer;
+  overflow: hidden; /* Hides the initial width: 0 element */
+  position: relative;
+  z-index: 1;
+  border: none;
+  border-bottom: 50px solid #101010;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-radius: 10%;
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Pseudo-element that starts at width 0 and expands */
+.coddy-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; /* Starts with 0 width */
+  height: 100%;
+  background-image: url("images/coddy.png"); /* The color that slides in */
+  transition: width 0.4s ease-out; /* Smoothly transitions the width property */
+  z-index: -1;
+}
+
+/* On hover, increase the width to 100% */
+.coddy-button:hover::before {
+  width: 100%; /* Slides into full view by expanding width */
+}
+
+.coddy-button:hover {
+  color: #000000 !important;
+  transform: rotate(-10deg);
+}
+
+/*micro:bit*/
+.mcbt-button {
+  /* Basic Button Styling */
+  display: inline-flex;
+  width: 400px;
+  height: 400px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #101010; /* Initial solid color */
+  cursor: pointer;
+  overflow: hidden; /* Hides the initial width: 0 element */
+  position: relative;
+  z-index: 1;
+  border: none;
+  border-bottom: 50px solid #101010;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-radius: 10%;
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Pseudo-element that starts at width 0 and expands */
+.mcbt-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; /* Starts with 0 width */
+  height: 100%;
+  background-image: url("images/mcbt.png"); /* The color that slides in */
+  transition: width 0.4s ease-out; /* Smoothly transitions the width property */
+  z-index: -1;
+}
+
+/* On hover, increase the width to 100% */
+.mcbt-button:hover::before {
+  width: 100%; /* Slides into full view by expanding width */
+}
+
+.mcbt-button:hover {
+  color: #000000 !important;
+  transform: rotate(-10deg);
+}
+
+/*Raspberry Pi*/
+.rpi-button {
+  /* Basic Button Styling */
+  display: inline-flex;
+  width: 400px;
+  height: 400px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #101010; /* Initial solid color */
+  cursor: pointer;
+  overflow: hidden; /* Hides the initial width: 0 element */
+  position: relative;
+  z-index: 1;
+  border: none;
+  border-bottom: 50px solid #101010;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-radius: 10%;
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Pseudo-element that starts at width 0 and expands */
+.rpi-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; /* Starts with 0 width */
+  height: 100%;
+  background-image: url("images/rpi.png"); /* The color that slides in */
+  transition: width 0.4s ease-out; /* Smoothly transitions the width property */
+  z-index: -1;
+}
+
+/* On hover, increase the width to 100% */
+.rpi-button:hover::before {
+  width: 100%; /* Slides into full view by expanding width */
+}
+
+.rpi-button:hover {
+  color: #000000 !important;
+  transform: rotate(-10deg);
+}
